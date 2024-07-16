@@ -16,6 +16,8 @@ producer:
 lock
 update or push queue
 notify using condition_variable
+
+std::lock_guard is a RAII (Resource Acquisition Is Initialization) class that simplifies mutex locking. When you create a std::lock_guard object, it locks the mutex, and when the std::lock_guard object goes out of scope (i.e., the end of the block {}), it automatically unlocks the mutex.
 */
 void producer() {
     for (int i = 0; i < 5; ++i) {
