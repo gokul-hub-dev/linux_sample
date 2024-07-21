@@ -33,9 +33,13 @@ install_cmake_3_15_7() {
     cd cmake-3.15.7
 
     # Compile and install
-    ./bootstrap
+    ./bootstrap --prefix=/home/ubuntu1604/cmake
     make
     sudo make install
+    export PATH=/home/gokul/cmake/bin:$PATH
+    #To make this change permanent, add the above line to your ~/.bashrc file:
+    #echo 'export PATH=/home/gokul/cmake/bin:$PATH' >> ~/.bashrc
+    #source ~/.bashrc
 }
 
 # Function to install CMake 3.15.0
@@ -57,9 +61,13 @@ install_cmake_3_15_0() {
     cd cmake-3.15.0
 
     # Compile and install
-    ./bootstrap
+    ./bootstrap --prefix=/home/ubuntu1604/cmake
     make
     sudo make install
+    export PATH=/home/gokul/cmake/bin:$PATH
+    #To make this change permanent, add the above line to your ~/.bashrc file:
+    #echo 'export PATH=/home/gokul/cmake/bin:$PATH' >> ~/.bashrc
+    #source ~/.bashrc
 }
 
 # Conditional check for installation
