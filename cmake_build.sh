@@ -1,6 +1,21 @@
 #!/bin/bash
 
 CMAKE_install=2
+DEFALUT_CMAKE='yes'
+
+# Conditional check for installation
+if [ "$DEFALUT_CMAKE" == "yes" ]; then
+    sudo apt remove cmake
+    sudo apt purge cmake
+    sudo apt remove --purge cmake
+    sudo rm -rf /usr/local/bin/cmake
+    sudo rm -rf /usr/local/share/cmake*
+    sudo rm -rf /usr/local/doc/cmake*
+    sudo rm -rf /usr/local/man/man1/cmake*
+    sudo rm -rf /usr/local/man/man7/cmake*
+    sudo apt update
+    sudo apt install cmake
+fi
 
 # Function to install CMake 3.15.7
 install_cmake_3_15_7() {
