@@ -82,7 +82,7 @@ sudo systemctl restart apache2
 
 
 ####################################IP show using Bash##############################
-http://raspberrypi.local/IP/IPSHOW.py
+http://raspberrypi.local/IP/IPSHOW.sh
 
 cd /usr/lib/IP
 
