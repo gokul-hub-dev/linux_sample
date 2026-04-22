@@ -568,7 +568,7 @@ Connects via EAP-TLS (802.1X with client certificate)
     │
     ▼
 Establishes tunnel to cloud server
-    │  (e.g., tvxlanf-c3-c00001-b.ch.tvx.comcast.com)
+    │ 
     │
     ▼
 Sends HTTP request for credentials
